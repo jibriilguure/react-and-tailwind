@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Typed from "react-typed";
-// import { render } from "react-dom";
+import React, {useState} from "react";
+import {ReactTyped} from "react-typed"; // Use named import if applicable
+
 const Hero = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
 
@@ -11,11 +11,12 @@ const Hero = () => {
   const closePopup = () => {
     setPopupOpen(false);
   };
+
   return (
     <div className="text-white">
-      <div className="max-w[800px] mt-[-95px] w-full  text-center  h-screen mx-auto flex flex-col justify-center">
-        <Typed
-          className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 "
+      <div className="max-w[800px] mt-[-95px] w-full text-center h-screen mx-auto flex flex-col justify-center">
+        <ReactTyped
+          className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
           strings={[
             "So dhawoow",
             "مرحبا",
@@ -23,22 +24,22 @@ const Hero = () => {
             "Bonjour",
             "Hallo",
             "Ciao",
-            "你好 ",
-            "こんにちは ",
+            "你好",
+            "こんにちは",
           ]}
           typeSpeed={120}
           backSpeed={140}
           loop
         />
-        <h1 className="text-p md:text-7xl sm:text-6xl text-4xl font-bold  ">
+        <h1 className="text-p md:text-7xl sm:text-6xl text-4xl font-bold">
           I'm Jibriil Guure
         </h1>
 
         <div>
-          <p className=" md:text-4xl sm:text-xl py-4">A Software Engneer</p>
+          <p className="md:text-4xl sm:text-xl py-4">A Software Engineer</p>
           <button
             onClick={openPopup}
-            className="mx-auto bg-p rounded-md  w-[200px] py-4 text-black font-bold"
+            className="mx-auto bg-p rounded-md w-[200px] py-4 text-black font-bold"
           >
             Contact
           </button>
